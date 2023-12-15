@@ -19,4 +19,8 @@ public class OrderNotFoundException extends RuntimeException {
         this.message = message;
         this.httpStatus = httpStatus;
     }
+
+    public OrderNotFoundException() {
+
+    }
 }

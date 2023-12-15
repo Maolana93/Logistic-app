@@ -24,10 +24,10 @@ public class AppUserRegistrationRequest {
 
     @NotBlank(message = " password cannot be empty")
     @Size(message = "Password must be greater than 6 and less than 20", min = 6, max = 20)
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,20}$", message = "Password must contain at least one lowercase letter, one uppercase letter, and one number")
     private String password;
 
     @NotBlank(message = " password cannot be empty")
-    @Size(message = "Password must be greater than 6 and less than 20", min = 6, max = 20)
     private String confirmPassword;
 
     @NotBlank(message = " phoneNumber cannot be empty")

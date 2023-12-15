@@ -51,4 +51,6 @@ public class GeneralExceptionHandler {
         ApiResponse response = new ApiResponse(ex.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
     }
+
+
 }

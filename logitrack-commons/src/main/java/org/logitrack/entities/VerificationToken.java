@@ -35,11 +35,9 @@ public class VerificationToken {
         this.user = user;
         this.email = user.getEmail();
         createdDate = new Date();
-        this.expirationTime = LocalDateTime.now().plusSeconds(60);
+        this.expirationTime = LocalDateTime.now().plusSeconds(300);
         confirmationToken = generateNumericOTP();
     }
-
-
     private String generateNumericOTP() {
         Random random = new Random();
         int otpLength = 6;

@@ -21,8 +21,6 @@ import java.util.Map;
 @ToString
 public class ApiResponse<T> {
 
-
-
         private String code;
         private String message;
         private T data;
@@ -30,8 +28,6 @@ public class ApiResponse<T> {
 
     @JsonIgnore
     private HttpStatus httpStatus;
-
-
 
         public ApiResponse(String code, String message, T data, String status) {
             this.code = code;

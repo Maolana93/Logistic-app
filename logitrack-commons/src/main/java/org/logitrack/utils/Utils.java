@@ -15,8 +15,10 @@ import java.util.Map;
 
 @Slf4j
 public class Utils {
-    @Value("${jwt.secretToken}")
-    private static String secretToken;
+//    @Value("${jwt.secretToken}")
+//    private String secretToken;
+    private static String secretToken = "sdfghjklsdfghjksdfghjdfghjertyucvbertyxcvertyxcvtyvertyertyuertyuxcvxcertertdfgxcvsdfgdf";
+
 
     private static Key getSigningKey() {
         byte[] keyBytes = Decoders.BASE64.decode(secretToken);

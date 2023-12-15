@@ -35,6 +35,8 @@ public class DeliveryManCreationRequest {
     private String drivingLicenseNumber;
     @NotBlank(message = "state cannot be empty")
     private String state;
+    @NotBlank(message = "state of issue cannot be empty")
+    private String stateOfIssue;
     @NotBlank(message = "password cannot be empty")
     @Size(message = "Password must be greater than 6 and less than 20", min = 6, max = 20)
     private String password;

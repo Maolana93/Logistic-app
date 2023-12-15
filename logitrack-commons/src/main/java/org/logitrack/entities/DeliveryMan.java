@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Getter
@@ -19,4 +20,5 @@ import java.util.List;
 public class DeliveryMan extends User {
     private static final long serialVersionUID=1l;
     private Integer ordersCompleted;
+    private UUID deliveryManId = UUID.fromString(UUID.randomUUID().toString());
 }
